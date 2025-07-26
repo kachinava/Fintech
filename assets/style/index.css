@@ -55,3 +55,46 @@ img {
   z-index: 1;
   width: 18rem;
 }
+@media (max-width: 768px) {
+  .cover {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cover-logo {
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .cover-paragraph {
+    font-size: 2rem; /* کوچک‌تر برای موبایل */
+    line-height: 2.5rem;
+  }
+
+  .image-of-site {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .cover-img-left,
+  .cover-img-right {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .cover-img-left:hover {
+    box-shadow: none; /* غیرفعال کردن سایه در موبایل برای سادگی */
+  }
+}
