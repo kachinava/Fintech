@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "intergal";
+  src: url(/assets/font/Fontspring-DEMO-integralcf-bold.otf);
+  src: url(/assets/font/Fontspring-DEMO-integralcf-bold\ .woff);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+.cover {
+  background-color: #c9f299;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 5rem 5rem;
+  font-family: "intergal";
+  display: flex;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  padding-left: 6rem;
+}
+.cover-logo {
+  width: 6rem;
+}
+.cover-paragraph {
+  font-size: 3rem;
+}
+.image-of-site {
+  display: flex;
+  align-items: flex-end;
+  width: 70%;
+  padding-left: 6rem;
+}
+.cover-img-left {
+  width: 38rem;
+  width: 38rem;
+  z-index: 2;
+}
+.cover-img-left:hover {
+  box-shadow: 90px 0px 110px 0px #00000036;
+  transition: all 1s;
+}
+.cover-img-right {
+  z-index: 1;
+  width: 18rem;
+}
