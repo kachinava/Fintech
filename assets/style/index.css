@@ -4,8 +4,17 @@
   src: url(/assets/font/Fontspring-DEMO-integralcf-bold\ .woff);
 }
 @font-face {
-    font-family: 'poppins';
-    src: url(/assets/font/Poppins-Regular.ttf);
+  font-family: "intergal-regular";
+  src: url(/assets/font/Fontspring-DEMO-integralcf-regular.otf);
+  src: url(/assets/font/Fontspring-DEMO-integralcf-regular.ttf);
+}
+@font-face {
+  font-family: "poppins-medium";
+  src: url(/assets/font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(/assets/font/Poppins-Regular.ttf);
 }
 * {
   box-sizing: border-box;
@@ -39,7 +48,7 @@ img {
   width: 6rem;
 }
 .cover-paragraph {
-    width: 100%;
+  width: 100%;
   font-size: 3rem;
 }
 .image-of-site {
@@ -64,11 +73,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 8rem;
-  font-family: 'poppins';
+  padding: 2rem 8rem 0 8rem;
+  font-family: "poppins";
   background-color: #01244f;
-  background-image: linear-gradient(to right , rgba(255, 255, 255, 0.1) 1px , transparent 1px )
-  , linear-gradient(to bottom , rgba(255, 255, 255, 0.1) , transparent 1px);
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent 1px);
   background-size: 5rem 5rem;
   color: white;
 }
@@ -88,8 +101,8 @@ img {
 /* ✅ Nav کنار هم بدون استایل پیش‌فرض */
 .nav-links ul {
   display: flex;
-  list-style: none;    /* حذف bullet */
-  padding: 0;           /* حذف فاصله پیش‌فرض */
+  list-style: none; /* حذف bullet */
+  padding: 0; /* حذف فاصله پیش‌فرض */
   margin: 0;
   gap: 1.5rem;
 }
@@ -139,7 +152,8 @@ img {
 }
 
 /* پیش‌فرض: منوی موبایل پنهان، منوی دسکتاپ نمایان */
-.mobile-menu , .auth-buttons2{
+.mobile-menu,
+.auth-buttons2 {
   display: none;
 }
 
@@ -155,6 +169,96 @@ img {
   border: none;
   color: white;
 }
+.trust-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+  flex-wrap: wrap;
+  background-color: #01244f;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 5rem 5rem;
+}
+
+.trust-span {
+  display: flex;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.197);
+  border-radius: 2.5rem;
+}
+
+.trust-span span {
+  color: white;
+  margin: 0.5rem;
+}
+
+.banner-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.small-text {
+  color: #46a048;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.banner-text h2 {
+  font-size: 4.5rem;
+  color: #fff;
+  font-family: "intergal-regular";
+}
+
+.banner-text p {
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 1.5;
+  font-family: "poppins";
+  width: 100%;
+}
+
+.banner-text h2 span {
+  color: #e2ff54;
+}
+
+.cta-button {
+  padding: 1rem 1.5rem;
+  background-color: #00b512;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+  width: 40%;
+}
+
+.cta-button:hover {
+  background-color: #38863b;
+}
+
+.banner-image {
+  width: 40%;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
 @media (max-width: 800px) {
   .cover {
     flex-direction: column;
@@ -197,19 +301,19 @@ img {
   .cover-img-left:hover {
     box-shadow: none; /* غیرفعال کردن سایه در موبایل برای سادگی */
   }
-  .site-header{
+  .site-header {
     display: flex;
     padding: 0;
   }
-  .auth-buttons2{
+  .auth-buttons2 {
     display: flex;
     padding-right: 1rem;
   }
-  .logo-area{
+  .logo-area {
     width: 100%;
     justify-content: center;
   }
-  .btn{
+  .btn {
     padding: 0.8rem 1.5rem;
   }
   .desktop-nav {
@@ -224,6 +328,7 @@ img {
   .mobile-menu nav {
     padding: 1rem;
     margin-left: -5rem;
+    position: absolute;
   }
 
   .mobile-menu ul {
@@ -244,5 +349,25 @@ img {
 
   .mobile-menu .btn {
     width: 100%;
+  }
+  .trust-banner {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .banner-text,
+  .banner-image {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .banner-text h2 {
+    font-size: 2rem;
+  }
+
+  .trust-span{
+    width: 70%;
   }
 }
