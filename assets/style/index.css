@@ -3,6 +3,10 @@
   src: url(/assets/font/Fontspring-DEMO-integralcf-bold.otf);
   src: url(/assets/font/Fontspring-DEMO-integralcf-bold\ .woff);
 }
+@font-face {
+    font-family: 'poppins';
+    src: url(/assets/font/Poppins-Regular.ttf);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,11 +33,13 @@ img {
   justify-content: center;
   width: 30%;
   padding-left: 6rem;
+  z-index: 2;
 }
 .cover-logo {
   width: 6rem;
 }
 .cover-paragraph {
+    width: 100%;
   font-size: 3rem;
 }
 .image-of-site {
@@ -43,8 +49,7 @@ img {
   padding-left: 6rem;
 }
 .cover-img-left {
-  width: 38rem;
-  width: 38rem;
+  width: 65%;
   z-index: 2;
 }
 .cover-img-left:hover {
@@ -53,9 +58,87 @@ img {
 }
 .cover-img-right {
   z-index: 1;
-  width: 18rem;
+  width: 30%;
 }
-@media (max-width: 768px) {
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8rem;
+  font-family: 'poppins';
+  background-color: #01244f;
+  background-image: linear-gradient(to right , rgba(255, 255, 255, 0.1) 1px , transparent 1px )
+  , linear-gradient(to bottom , rgba(255, 255, 255, 0.1) , transparent 1px);
+  background-size: 5rem 5rem;
+  color: white;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ✅ Nav کنار هم بدون استایل پیش‌فرض */
+.nav-links ul {
+  display: flex;
+  list-style: none;    /* حذف bullet */
+  padding: 0;           /* حذف فاصله پیش‌فرض */
+  margin: 0;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #2c8dfb;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.login:hover {
+  background-color: #e6f0ff;
+}
+
+.signup {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup:hover {
+  background-color: #1e6fd0;
+}
+
+@media (max-width: 800px) {
   .cover {
     flex-direction: column;
     align-items: center;
