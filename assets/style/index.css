@@ -472,7 +472,7 @@ img {
   width: 45%;
 }
 
-.featured-images img{
+.featured-images img {
   width: 100%;
 }
 
@@ -489,6 +489,100 @@ img {
   height: auto;
   border-radius: 0.5rem;
   object-fit: cover;
+}
+
+.security-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+  background-image: url(/assets/image/ChatGPT\ Image\ Jul\ 28\,\ 2025\,\ 07_56_34\ AM.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.security-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.security-badge {
+  display: inline-block;
+  background: transparent;
+  backdrop-filter: blur(5rem);
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.security-heading {
+  font-size: 3.5rem;
+  font-family: "poppins-regular";
+  color: white;
+}
+
+.security-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+  width: 75%;
+  font-family: "poppins-regular";
+}
+
+.security-cta {
+  background-color: #00b512;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 25%;
+}
+
+.security-cta:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.security-image-wrapper {
+  width: 30%;
+}
+
+.security-image-wrapper img {
+  width: 100%;
+}
+
+@media (max-width:1024px) {
+  .security-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .security-image-wrapper {
+    width: 80%;
+  }
+
+  .security-heading {
+    font-size: 2.2rem;
+  }
+
+  .security-description {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .security-cta {
+    width: 60%;
+    margin: 0 auto;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -727,6 +821,34 @@ img {
   }
 
   .featured-text {
+    width: 100%;
+  }
+
+  .security-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .security-heading {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .security-description {
+    font-size: 0.9rem;
+  }
+
+  .security-cta {
+    width: 80%;
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .security-badge {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.7rem;
+  }
+
+  .security-image-wrapper {
     width: 100%;
   }
 }
