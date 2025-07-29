@@ -1082,4 +1082,105 @@ img {
   .security-image-wrapper {
     width: 100%;
   }
+
+  .services-heading {
+    font-size: 2rem;
+  }
+
+  .services-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .services-img,
+  .services-explain {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .services-logo {
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  .explain {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .creat-card-and-personalize {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .create-card,
+  .personalize {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .creat-card-logo,
+  .personalize-logo {
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  .creat-card-heading,
+  .personalize-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .personalize-heading{
+    margin-left: 1rem;
+  }
+
+  .creat-your-card img{
+    width: 100%;
+  }
+
+  .creat-card-paragraph,
+  .personalize-paragraph {
+    font-size: 1rem;
+  }
+  
+  .creat-card-paragraph{
+  width: 100%;
+}
+
+  .personalize-paragraph{
+    margin-left: 1rem;
+  }
+
+  .card-example {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .total-balance {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .site-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-options a {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .site-options-button {
+    padding: 1rem 0;
+  }
+
+  .site-options-button button {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
 }
