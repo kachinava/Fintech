@@ -790,6 +790,93 @@ img {
   color: white;
 }
 
+.my-section {
+  padding: 2rem;
+}
+
+.intro-div {
+  margin-bottom: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro-div span {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.intro-div h3 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* سه دیویژن کنار هم */
+.three-divs {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+/* تک‌تک آیتم‌ها */
+.three-divs .item {
+  display: flex;
+  padding: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  gap: 1rem;
+  flex-direction: column;
+  width: 30%;
+  transition: all 0.7s;
+}
+
+/* لوگو */
+.logo {
+  margin-bottom: 0.5rem;
+  width: 10%;
+}
+
+/* پاراگراف */
+.item p {
+  margin-bottom: 1rem;
+  font-family: "poppins-regular";
+  width: 82%;
+}
+
+.between:hover , .left:hover , .right:hover {
+  background-color: #004852;
+  color: white;
+  box-shadow: 6px 6px 8px 2px #13c274;
+}
+
+/* دیویژن داخلی */
+.inner-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inner-div img {
+  max-width: 100px;
+  height: auto;
+}
+
+.name-rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.inner-div span {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 1024px) {
   .security-section {
     flex-direction: column-reverse;
@@ -1132,11 +1219,11 @@ img {
     text-align: center;
   }
 
-  .personalize-heading{
+  .personalize-heading {
     margin-left: 1rem;
   }
 
-  .creat-your-card img{
+  .creat-your-card img {
     width: 100%;
   }
 
@@ -1144,12 +1231,12 @@ img {
   .personalize-paragraph {
     font-size: 1rem;
   }
-  
-  .creat-card-paragraph{
-  width: 100%;
-}
 
-  .personalize-paragraph{
+  .creat-card-paragraph {
+    width: 100%;
+  }
+
+  .personalize-paragraph {
     margin-left: 1rem;
   }
 
@@ -1183,4 +1270,59 @@ img {
     padding: 1rem;
     font-size: 1.2rem;
   }
+
+.three-divs {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .three-divs .item {
+    width: 100%;
+    padding: 2rem;
+  }
+  .item p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .logo {
+    width: 15%;
+    margin: 0 auto;
+  }
+  .inner-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-div img {
+    max-width: 80px;
+  }
+  .name-rate {
+    align-items: center;
+    text-align: center;
+  }
+  .name-rate span {
+    font-size: 0.9rem;
+  }
+
 }
+
+@media (max-width: 480px) {
+  .intro-div span {
+    font-size: 1rem;
+  }
+  .intro-div h3 {
+    font-size: 1.5rem;
+  }
+  .three-divs .item {
+    padding: 1.5rem;
+  }
+  .item p {
+    font-size: 0.9rem;
+  }
+  .inner-div img {
+    max-width: 60px;
+  }
+  .site-options-button button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  }
