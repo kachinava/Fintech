@@ -844,7 +844,9 @@ img {
   width: 82%;
 }
 
-.between:hover , .left:hover , .right:hover {
+.between:hover,
+.left:hover,
+.right:hover {
   background-color: #004852;
   color: white;
   box-shadow: 6px 6px 8px 2px #13c274;
@@ -875,6 +877,51 @@ img {
 .inner-div span {
   display: inline-block;
   font-size: 0.9rem;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 2rem 0 2rem;
+  color: white;
+  background-image: url(/assets/image/ChatGPT\ Image\ Jul\ 28\,\ 2025\,\ 07_56_34\ AM.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 50%;
+}
+
+.hero-content h3 {
+  font-size: 3rem;
+  font-family: "poppins-regular";
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  width: 86%;
+  font-family: "poppins-medium";
+}
+
+.hero-content .btn {
+  background: #40af3e;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+.hero-content .btn:hover {
+  background: transparent;
+  border: 3px solid #40af3e;
 }
 
 @media (max-width: 1024px) {
@@ -1271,7 +1318,7 @@ img {
     font-size: 1.2rem;
   }
 
-.three-divs {
+  .three-divs {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -1301,7 +1348,22 @@ img {
   .name-rate span {
     font-size: 0.9rem;
   }
-
+  .hero-content {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content h3 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .hero-content .btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1325,4 +1387,22 @@ img {
     padding: 1rem;
     font-size: 1rem;
   }
+  .hero {
+    flex-direction: column;
+    padding: 1.5rem;
   }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h3 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .hero-content .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
