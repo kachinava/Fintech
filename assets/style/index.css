@@ -924,6 +924,67 @@ img {
   border: 3px solid #40af3e;
 }
 
+.linkbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0 2rem 0;
+}
+
+.googleplay-applestore {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+.footer-nav2 ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-nav2{
+  margin-bottom: 2rem;
+}
+
+.footer-links{
+  margin-bottom: 2rem;
+}
+
+.footer-nav a {
+  font-family: "poppins-regular";
+  text-decoration: gray;
+  text-decoration: none;
+}
+
+.footer-nav2 a {
+  font-family: "poppins-regular";
+  text-decoration: gray;
+  text-decoration: none;
+}
+
+.email{
+  margin-bottom: 2rem;
+}
+
+.email a{
+  text-decoration: none;
+  color: black;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1024px) {
   .security-section {
     flex-direction: column-reverse;
@@ -948,6 +1009,8 @@ img {
     width: 60%;
     margin: 0 auto;
   }
+
+  
 }
 
 @media (max-width: 800px) {
@@ -1363,6 +1426,72 @@ img {
   .hero-content .btn {
     padding: 1rem 2rem;
     font-size: 1.2rem;
+  }
+
+  .linkbar {
+    padding: 3rem 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .googleplay-applestore {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .footer-nav2 ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .socialmedia {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .footer-links {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-nav a,
+  .footer-nav2 a {
+    font-size: 14px;
+    display: block;
+  }
+
+  .email span {
+    display: block;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .my-name p {
+    font-size: 12px;
+  }
+
+  .last-logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .googleplay-applestore img {
+    width: 140px;
+    height: auto;
+  }
+
+  .socialmedia img {
+    width: 30px;
+    height: 30px;
   }
 }
 
